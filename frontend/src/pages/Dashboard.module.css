@@ -1,0 +1,164 @@
+.dashboardWrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(100,108,255,0.55) 0%, rgba(127,83,255,0.45) 50%, rgba(255,110,127,0.45) 100%);
+  padding: 32px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:global(html), :global(body) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+@media (orientation: portrait) {
+  .dashboardWrapper {
+    min-height: 50vh;
+    height: 100dvh;
+    width: 100vw;
+    padding: 16px 0;
+    /* overflow-y: hidden; */
+  }
+  .summaryRow {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: stretch;
+    
+  }
+  .summarySection,
+  .section900 {
+    max-width: 93vw;
+    width: 100%;
+  }
+  .summaryCard{
+    margin: -.6em;
+  }
+  .section900 {
+    overflow-y: auto;
+    max-height: 50vh;
+  }
+}
+.heading {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin-bottom: 8px;
+  font-size: 2em;
+}
+.subheading {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  
+  margin-bottom: 8px;
+  color: #646cff;
+}
+.description {  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  margin: 0;
+  margin-bottom: 0;
+  color: #555;
+  font-size: 16px;
+}
+.summarySection {
+  width: 900px;
+  margin: 0 auto 24px auto;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryRow {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryCard {
+  background: #e0ffe0;
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 150px;
+  flex: 1;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  text-align: center;
+}
+.summaryCard.expense {
+  background: #ffe0e0;  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryCard.net {
+  background: #e3e3ff;  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.summaryValue.income {
+  color: #2e7d32;
+  font-size: 20px;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryValue.expense {
+  color: #c62828;
+  font-size: 20px;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryValue.netPositive {
+  color: #1565c0;
+  font-size: 20px;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.summaryValue.netNegative {
+  color: #c62828;
+  font-size: 20px;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.section900 {
+  width: 900px;
+  margin: 0 auto;
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+.topLeftHeading {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+  padding-top: 8px;
+}
+@media (orientation: portrait) {
+  .topLeftHeading {
+    padding-left: 1em;
+    padding-top: 4px;
+    margin-top: -2.5em;
+  }
+  .centerText {
+    padding-left: 1em;
+  }
+}
+.tableHeading {
+  text-align: left;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #222;
+}
+@media (orientation: portrait) {
+  .tableHeading {
+    padding-left: 1em;
+  }
+}
+@media (orientation: landscape) {
+  .topLeftHeading,
+  .centerText,
+  .tableHeading
+  .subheading {
+    text-align: center;
+  }
+} 

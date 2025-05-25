@@ -1,0 +1,41 @@
+.formGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 900px) {
+  .formGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.field {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.btnRow {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.btnPrimary {
+  background: #646cff;
+  color: #fff;
+}
+.btnSecondary {
+  background: #eee;
+  color: #333;
+} 
